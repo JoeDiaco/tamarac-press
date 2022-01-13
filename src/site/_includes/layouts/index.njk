@@ -1,0 +1,10 @@
+{% extends "layouts/base.njk" %}
+
+{% block main %}
+  {% include "banner.njk" %}  
+    <section id="main" class="container"> 
+        {% block content %}
+            {{ content | safe }}
+        {% endblock %}
+    </section>
+{% endblock %}

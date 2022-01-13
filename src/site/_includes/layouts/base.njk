@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>{{ title }}</title>
-  </head>
-  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
-
-    <div class="container">
+  {% include "head.njk" %}
+	<body class="landing is-preload">
+		<div id="page-wrapper">
       {% include "header.njk" %}
-      {{ content | safe }}
+      {% block main %}
+        Page content goes here
+      {% endblock %}
       {% include "footer.njk" %}
     </div>
 
     {% set js %}
-      {% include "js/core.js" %}
-      {% include "js/hello.js" %}
+      {% include "js/jquery.min.js" %}
+      {% include "js/jquery.dropotron.min.js" %}
+      {% include "js/jquery.scrollex.min.js" %}
+      {% include "js/browser.min.js" %}
+      {% include "js/breakpoints.min.js" %}
+      {% include "js/util.js" %}
+      {% include "js/main.js" %}
     {% endset %}
     <script>{{ js | jsmin | safe }}</script>
-
   </body>
 </html>
+
+  
 
 
 
