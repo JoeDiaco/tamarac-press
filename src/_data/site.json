@@ -1,0 +1,21 @@
+{
+    "title": "The Tamarac Press",
+    "slogan": "Your Book, Your Way",
+    "rootUrl": "https://thetamaracpress.com",
+    "description": "The Tamarac Press, a small self-publishing services business located in the beautiful hills of Vermont.",
+    "owner": {
+        "name": "Pat Goudey O'Brien",
+        "email": "nnobrien@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/pat-goudey-obrien-32546913/",
+        "address": {
+            "name": "The Tamarac Press",
+            "pobox": "PO Box 26",
+            "town": "Underhill Center",
+            "state": {
+                "fullname": "Vermont",
+                "shortname": "VT"
+            },
+            "zipcode": "05490"
+        }
+    }
+}
