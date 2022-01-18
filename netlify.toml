@@ -1,0 +1,4 @@
+[build]
+  publish = "_site"
+  environment = { NODE_VERSION = "v16.13.2" }
+  command = "npm run"
