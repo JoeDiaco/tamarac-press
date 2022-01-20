@@ -93,8 +93,13 @@ layout: "base.njk"
                     <div class="project-category">{{ book.author }}</div>&nbsp
                     <div>ISBN: {{ book.ISBN }}</div>&nbsp
                     <div>{{ book.contentBlurb }}</div>&nbsp
-                    <div><a href="{{ book.amazonLink }}">Buy it on Amazon</a></div>
-                    <div><a href="{{ book.indieBoundLink }}">Buy it on Indiebound</a></div>
+                    {% if book.merchantLinks %}
+                    {% for merchant in book.merchantLinks %}
+                    <div><a href="{{ merchant.link }}" class="merchant-links">Buy it on {{ merchant.name }}</a></div>
+                    {% endfor %}
+                    {% else %}
+                    <div>{{ book.purchaseNotes }}</div>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}
