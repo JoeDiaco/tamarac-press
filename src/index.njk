@@ -79,17 +79,23 @@ layout: "base.njk"
         <div class="row g-0">
             {% for book in books %}
             <div class="col-lg-4 col-sm-6">
-                <a class="our-books-box" href="/assets/images/img/our-books/{{ book.coverFilename }}" title="Project Name">
-                    <img class="img-fluid" src="/assets/images/img/our-books/{{ book.coverFilename }}" alt="..." />
+                <a class="our-books-box" href="/assets/images/img/our-books/{{ book.coverFilename }}"
+                    title="{{ book.title }} ">
+                    <img class="img-fluid" src="/assets/images/img/our-books/{{ book.coverFilename }}"
+                        alt="{{ book.title }} by {{ book.author }}" />
                     <div class="our-books-box-caption">
                         <div class="project-name text-white-50">{{ book.title }}</div>
                         <div class="project-category">{{ book.author }}</div>&nbsp
-                        <div>ISBN: {{ book.ISBN }}</div>&nbsp
-                        <div>{{ book.contentBlurb }}</div>&nbsp
                     </div>
                 </a>
-                <div><a href="{{ book.amazonLink }}">Buy it on Amazon</a></div>
-                <div><a href="{{ book.indieBoundLink }}">Buy it on Indiebound</a></div>
+                <div class="our-books-data">
+                    <div class="project-name text-white-50">{{ book.title }}</div>
+                    <div class="project-category">{{ book.author }}</div>&nbsp
+                    <div>ISBN: {{ book.ISBN }}</div>&nbsp
+                    <div>{{ book.contentBlurb }}</div>&nbsp
+                    <div><a href="{{ book.amazonLink }}">Buy it on Amazon</a></div>
+                    <div><a href="{{ book.indieBoundLink }}">Buy it on Indiebound</a></div>
+                </div>
             </div>
             {% endfor %}
         </div>
@@ -109,7 +115,8 @@ layout: "base.njk"
             <div class="col-lg-8 col-xl-6 text-center">
                 <h2 class="mt-0">Let's Get In Touch!</h2>
                 <hr class="divider" />
-                <p class="text-muted mb-5">Ready to start your next publishing project with The Tamarac Press? Send me a message and let's chat!</p>
+                <p class="text-muted mb-5">Ready to start your next publishing project with The Tamarac Press? Send me a
+                    message and let's chat!</p>
             </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
@@ -133,8 +140,9 @@ layout: "base.njk"
                     </div>
                     <!-- Message input-->
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" type="text" name="message" placeholder="Enter your message here..."
-                            style="height: 10rem" data-sb-validations="required"></textarea>
+                        <textarea class="form-control" id="message" type="text" name="message"
+                            placeholder="Enter your message here..." style="height: 10rem"
+                            data-sb-validations="required"></textarea>
                         <label for="message">Message</label>
                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                     </div>
@@ -163,7 +171,7 @@ layout: "base.njk"
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-4 text-center mb-5 mb-lg-0">
                 <i class="bi-mailbox fs-2 mb-3 text-muted"></i>
-                <div><a href="mailto:{{ site.owner.email }}" >{{ site.owner.email }}</a></div>
+                <div><a href="mailto:{{ site.owner.email }}">{{ site.owner.email }}</a></div>
             </div>
         </div>
     </div>
