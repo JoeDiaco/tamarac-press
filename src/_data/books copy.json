@@ -43,6 +43,15 @@
         "purchaseNotes": "Purchase through: The Tamarac Press: info@thetamaracpress.com"
     },
     {
+        "title": "The Unofficial Guide to Beating Stress",
+        "author": "Pat Goudey O'Brien",
+        "ISBN": "8126501154",
+        "contentBlurb": "",
+        "coverFilename": "PGOB-Beating Stress-Wiley-2000.jpg",
+        "amazonLink": "https://www.amazon.com/Unofficial-Guide-Beating-Stress-Goudey/dp/8126501154",
+        "indieBoundLink": ""
+    },
+    {
         "title": "Incident at St Albans",
         "author": "Ted Tedford",
         "ISBN": "978-0-9907792-0-9",
@@ -50,6 +59,15 @@
         "coverFilename": "Tedford- IncidentAtStAlbans cover.jpg",
         "amazonLink": "https://www.amazon.com/Incident-St-Albans-Ted-Tedford/dp/0990779203/ref=sr_1_1?crid=1GTMP6FHC0GQL&keywords=Incident+at+St.+Albans&qid=1642103689&s=books&sprefix=incident+at+st.+albans%2Cstripbooks%2C74&sr=1-1",
         "indieBoundLink": "https://www.indiebound.org/search/book?keys=Incident+at+St.+Albans"
+    },
+    {
+        "title": "Official Price Guide to Collecting Books",
+        "author": "Marie Tedford and Pat Goudey O'Brien",
+        "ISBN": "978-0375722936",
+        "contentBlurb": "Book collecting has long been a popular hobby, and it continues to grow in popularity. This revised and updated edition of The Official Price Guide to Books has everything a book collector needs. It features black-and-white photographs and includes an eight-page color insert of exceptional book covers",
+        "coverFilename": "Tedford-Goudey-CollectingBooks-Fr-RandomHouse-2008.jpg",
+        "amazonLink": "https://www.amazon.com/Official-Price-Guide-Collecting-Books-dp-0375722939/dp/0375722939/ref=dp_ob_title_bk",
+        "indieBoundLink": ""
     },
     {
         "title": "Nanny Goat Hill",

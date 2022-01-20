@@ -77,17 +77,21 @@ layout: "base.njk"
         </div>
         <hr class="divider" />
         <div class="row g-0">
-
+            {% for book in books %}
             <div class="col-lg-4 col-sm-6">
-                <a class="our-books-box" href="/assets/images/img/our-books/fullsize/1.jpg" title="Project Name">
-                    <img class="img-fluid" src="/assets/images/img/our-books/thumbnails/1.jpg" alt="..." />
+                <a class="our-books-box" href="/assets/images/img/our-books/{{ book.coverFilename }}" title="Project Name">
+                    <img class="img-fluid" src="/assets/images/img/our-books/{{ book.coverFilename }}" alt="..." />
                     <div class="our-books-box-caption">
-                        <div class="project-category text-white-50">Category</div>
-                        <div class="project-name">Project Name</div>
+                        <div class="project-name text-white-50">{{ book.title }}</div>
+                        <div class="project-category">{{ book.author }}</div>&nbsp
+                        <div>ISBN: {{ book.ISBN }}</div>&nbsp
+                        <div>{{ book.contentBlurb }}</div>&nbsp
                     </div>
                 </a>
+                <div><a href="{{ book.amazonLink }}">Buy it on Amazon</a></div>
+                <div><a href="{{ book.indieBoundLink }}">Buy it on Indiebound</a></div>
             </div>
-
+            {% endfor %}
         </div>
     </div>
 </div>
