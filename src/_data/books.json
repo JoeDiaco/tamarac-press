@@ -1,6 +1,4 @@
-{
-    "title": "Our Books",
-    "books": [{
+[{
             "title": "A Year on the Bus",
             "author": "Dan Close",
             "ISBN": "978-0-9706620-2-6",
@@ -81,4 +79,3 @@
             "indieBoundLink": "https://www.indiebound.org/search/book?keys=Nanny+Goat+Hill"
         }
     ]
-}
