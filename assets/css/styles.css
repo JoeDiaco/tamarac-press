@@ -11468,3 +11468,7 @@ header.masthead h1, header.masthead .h1 {
 .our-books-data {
   padding: 8px;
 }
+
+.merchant-links {
+  text-align: center;
+}
