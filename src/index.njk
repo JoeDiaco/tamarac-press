@@ -84,7 +84,7 @@ layout: "base.njk"
                     <div><a href="{{ merchant.link }}" class="merchant-links">Buy it on {{ merchant.name }}</a></div>
                     {% endfor %}
                     {% else %}
-                    <div>{{ book.purchaseNotes }}</div>
+                    <div>{{ book.purchaseNotes | safe }}</div>
                     {% endif %}
                 </div>
             </div>
