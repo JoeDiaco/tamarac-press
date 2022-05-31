@@ -20,7 +20,8 @@ layout: "base.njk"
 <section class="page-section" id="services">
     {% for category in services %}
     {% set numservices = category.services.length %}
-    <div class="container px-4 px-lg-5">
+    {% set islast = loop.index === numservices %}
+    <div class="container px-4 px-lg-5{% if islast %} pt-5{% endif %}">
         <h2 class="text-center mt-0">{{ category.categoryname }} Services</h2>
         <hr class="divider" />
         <div class="row gx-4 gx-lg-5">
