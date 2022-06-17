@@ -139,7 +139,7 @@ layout: "base.njk"
                         <label for="message">Message</label>
                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                     </div>
-                    <!-- Submit success message-->
+                    {# <!-- Submit success message-->
                     <!---->
                     <!-- This is what your users will see when the form-->
                     <!-- has successfully submitted-->
@@ -154,9 +154,9 @@ layout: "base.njk"
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage">
                         <div class="text-center text-danger mb-3">Error sending message!</div>
-                    </div>
+                    </div> #}
                     <!-- Submit Button-->
-                    <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
+                    <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton"
                             type="submit">Submit</button></div>
                 </form>
             </div>
