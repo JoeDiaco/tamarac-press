@@ -64,9 +64,9 @@ layout: "base.njk"
             </div>
         </div>
         <hr class="divider" />
-        <div class="row g-0">
+        <div class="row g-8">
             {% for book in books %}
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-3 col-sm-6">
                 <a class="our-books-box" href="/assets/images/img/our-books/{{ book.coverFilename }}"
                     title="{{ book.title }} ">
                     <img class="img-fluid" src="/assets/images/img/our-books/{{ book.coverFilename }}"
@@ -89,6 +89,29 @@ layout: "base.njk"
                     <div>{{ book.purchaseNotes | safe }}</div>
                     {% endif %}
                 </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div id="pat-books">
+    <div class="container-fluid p-0">
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class=" mt-0">Pat's Books</h2>
+            </div>
+        </div>
+        <hr class="divider" />
+        <div class="row g-8">
+            {% for book in pat_books %}
+            <div class="col-lg-3 col-sm-6">
+                    <img class="img-fluid" src="/assets/images/img/pat-books/{{ book.coverFilename }}"
+                        alt="{{ book.title }} by Pat Goudey O'Brien" />
+                    <div class="pat-books-box-caption">
+                        <div class="project-name text-white-50">{{ book.title }}</div>
+                        <div class="project-category">{{ book.title }}</div>&nbsp
+                    </div>
             </div>
             {% endfor %}
         </div>
