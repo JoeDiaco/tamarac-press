@@ -1,0 +1,40 @@
+[
+    {
+        "categoryname": "Editing",
+        "services": [{
+                "name": "Manuscript Assessment",
+                "description": "Read-through for fiction or non-fiction. 45-minute in-person or Zoom discussion, 3-5 page written report on structure, manuscript goals, narrative arc, language, etc.",
+                "icon": "vector-pen"
+            },
+            {
+                "name": "Developmental Editing",
+                "description": "Manuscript assessment, plus consultation on remedies for issues found.",
+                "icon": "lightbulb"
+            },
+            {
+                "name": "Line Editing",
+                "description": "Page-by-page editing for language, style, and consistency.",
+                "icon": "journal-text"
+            },
+            {
+                "name": "Proofreading",
+                "description": "Checking the final manuscript for grammatical, typographical and formatting errors.",
+                "icon": "check-circle-fill"
+            }
+        ]
+    },
+    {
+        "categoryname": "Other",
+        "services": [{
+                "name": "Publishing Consultation",
+                "description": "Half-hour free discussion to determine goals and status of manuscript. If engaged, we shepherd your manuscript through editorial, design, and print-and-bind, offering options for press or digital publishing.",
+                "icon": "chat-left-quote"
+            },
+            {
+                "name": "Subsidy Publishing",
+                "description": "Using our ISBN and services, we turn your manuscript into a finished book. Fees negotiated based on length of manuscript and services chosen. Includes editorial, design, and print-and-bind. We use IngramSpark to create your book the way you want it.",
+                "icon": "cash-coin"
+            }
+        ]
+    }
+        ]

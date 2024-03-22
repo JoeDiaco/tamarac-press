@@ -1,28 +1,23 @@
-{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preload" href="{{ env.baseUrl }}css/page.css" as="style">
-<!-- PRELOAD CDN SCRIPTS -->
-<link rel="preconnect" href="https://unpkg.com/popper.js@1" as="script">
-<link rel="preconnect" href="https://unpkg.com/tippy.js@4" as="script">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="{{ description or site.description }}">
-<meta name="author" content="{{ site.author }}">
-<meta name="robots" content="index,follow">
-<!-- BEGIN SOCIAL META DATA -->
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ title or site.title }}">
-<meta property="og:description" content="{{ description  or site.description }}">
-<meta property="og:url" content="{{ absolutePageUrl }}">
-<meta name="twitter:card" content="{% if image -%}summary_large_image{% else %}summary{% endif %}">
-{%- if image -%}
-  <meta property="og:image" content="{{ image | url | absoluteUrl(site.url) }}">
-{%- endif -%}
-<!-- ./END SOCIAL META DATA -->
-<meta name="theme-color" content="#ffffff">
-<title>{{ title or site.title }} | {{ site.author }}</title>
-<link rel="stylesheet" href="{{ env.baseUrl }}css/page.css">
-{% if not isFront %}
-  <!-- include Normalize for regular text pages -->
-  <link rel="stylesheet"  href="{{ env.baseUrl }}css/normalize.min.css">
-{% endif %}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{{ site.title }}</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+        <link rel="manifest" href="/assets/site.webmanifest">
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+    </head>
