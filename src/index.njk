@@ -67,9 +67,9 @@ layout: "base.njk"
         <div class="row g-8">
             {% for book in books %}
             <div class="col-lg-3 col-sm-6">
-                <a class="our-books-box" href="/assets/images/img/our-books/{{ book.coverFilename }}"
+                <a class="our-books-box" href="/assets/images/our-books/{{ book.coverFilename }}"
                     title="{{ book.title }} ">
-                    <img class="img-fluid" src="/assets/images/img/our-books/{{ book.coverFilename }}"
+                    <img class="img-fluid" src="/assets/images/our-books/{{ book.coverFilename }}"
                         alt="{{ book.title }} by {{ book.author }}" />
                     <div class="our-books-box-caption">
                         <div class="project-name text-white-50">{{ book.title }}</div>
@@ -106,7 +106,7 @@ layout: "base.njk"
         <div class="row g-8">
             {% for book in pat_books %}
             <div class="col-lg-3 col-sm-6">
-                    <img class="img-fluid" src="/assets/images/img/pat-books/{{ book.coverFilename }}"
+                    <img class="img-fluid" src="/assets/images/pat-books/{{ book.coverFilename }}"
                         alt="{{ book.title }} by Pat Goudey O'Brien" />
                     <div class="pat-books-box-caption">
                         <div class="project-name text-white-50">{{ book.title }}</div>

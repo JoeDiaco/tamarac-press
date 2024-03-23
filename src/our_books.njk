@@ -1,0 +1,15 @@
+---
+layout: base.njk
+pagination:
+  data: books
+  size: 1
+  alias: book
+  addAllPagesToCollections: true
+permalink: "our-books/{{ book.title }}/"
+eleventyComputed:
+  title: "{{ book.title }}"
+  seoDescription: "{{ book.contentBlurb }}"
+  eleventyNavigation:
+    parent: ourBooks
+    key: "{{ book.title }}"
+    title: "{{ book.title}}"
